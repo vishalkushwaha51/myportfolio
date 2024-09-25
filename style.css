@@ -1,0 +1,406 @@
+/* General Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(294deg, rgba(171,25,192,1) 0%, rgba(18,23,160,1) 100%);
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('painter-1937575.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.hero h2 {
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.cta {
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+.cta:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Section Styling */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Gallery Section 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: ;
+}
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}*/
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create responsive grid */
+    gap: 10px; /* Space between images */
+    justify-items: center;
+}
+
+.gallery-grid img {
+    width: 100%; /* Make images fill their grid cells */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure the image fills the space without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a clean look */
+    transition: transform 0.3s ease; /* For hover effect */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+@media (max-width: 600px) {
+    .gallery-grid img {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+}
+
+
+/* About Section */
+.about{
+    background: rgb(255,119,119);
+background: linear-gradient(294deg, rgba(255,119,119,1) 0%, rgba(186,25,166,1) 23%, rgba(172,24,84,1) 64%, rgba(18,75,160,1) 96%);
+}
+.about h2{
+    font-size: 200%;
+    font-family:'Times New Roman', Times, serif
+}
+.about p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-size: xx-large;
+    font-style: italic;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+   
+}
+
+/* Commission Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+form label {
+    font-size: 1.1rem;
+}
+form input,
+form textarea,
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #fb0606;
+}
+
+/* Contact Section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.social-icon {
+    font-size: 1.2rem;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#contact h1 {
+    font-size: xx-large;
+}
+
+/* Media Queries */
+
+}
+.lightbox {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+    z-index: 1000; /* Ensure it sits on top */
+}
+
+.lightbox-content {
+    max-width: 90%; /* Limit the image size */
+    max-height: 90%; /* Limit the image size */
+}
+/* Media Queries */
+
+/* For devices with a max width of 1024px (Tablets and small desktops) */
+/* Ensure no overflow on the right side */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* General social media styling */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Icons wrap when they can't fit */
+}
+
+.social-icon {
+    font-size: 2rem; /* Initial size for larger screens */
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+   
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* CTA Button */
+    .cta {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* Form Adjustments */
+    form input, form textarea, button {
+        max-width: 100%;
+    }
+
+    /* Footer font size */
+    footer {
+        font-size: 0.9rem;
+    }
+
+    /* Social Media Icons */
+    .social-icon {
+        font-size: 1.8rem;
+        padding: 8px 18px;
+    }
+}
+
+/* For tablets and large smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Navigation Adjustments */
+
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* CTA Button */
+    .cta {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    /* Form Adjustments */
+    form input, form textarea, button {
+        max-width: 100%;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+        flex-direction: row; /* Keep in a row */
+        justify-content: space-around; /* Spread out icons */
+        gap: 0.5 rem; /* Reduce gap */
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+        padding: 6px 12px;
+    }
+
+    /* Footer font size */
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* For smartphones (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Hero Section */
+    nav ul {
+        flex-direction: column;}
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    /* CTA Button */
+    .cta {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    /* Gallery Section */
+    .gallery-grid img {
+        height: 150px; /* Reduce image height */
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    /* About Section */
+    .about h2 {
+        font-size: 1.6rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    /* Form Adjustments */
+    form input, form textarea, button {
+        max-width: 100%;
+    }
+
+    /* Social Media Icons */
+    .social-media {
+        flex-direction: row; /* Stack vertically */
+        align-items: center; /* Center align */
+        gap: 0.3rem;
+       
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+
+    /* Footer font size */
+    footer {
+        font-size: 0.7rem;
+    }
+}

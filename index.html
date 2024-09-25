@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+       
+      
+      
+        <nav>
+          
+            <ul>
+             
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#commissions">Commissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+        <h2>Welcome to My Art Portfolio</h2>
+        <p>Discover my art and get in touch for commissions!</p>
+        <a href="#gallery" class="cta">Explore My Work</a>
+    </section>
+
+
+    <section id="gallery" class="gallery section">
+        <h2>My Artwork</h2>
+        <div class="gallery-grid">
+        
+                <a href="1.jpg" class="lightbox-trigger" target="_blank"><img src="1.jpg" alt="Artwork 1"></a>
+                <a href="2.jpg" class="lightbox-trigger" target="_blank"><img src="2.jpg" alt="Artwork 2"></a>
+                <a href="3.jpg" class="lightbox-trigger" target="_blank"><img src="3.jpg" alt="Artwork 3"></a>
+                <a href="4.webp" class="lightbox-trigger" target="_blank"><img src="4.webp" alt="Artwork 4"></a>
+                <a href="5.jpg" class="lightbox-trigger" target="_blank"><img src="5.jpg" alt="Artwork 5"></a>
+                <a href="6.webp" class="lightbox-trigger" target="_blank"><img src="6.webp" alt="Artwork 6"></a>
+                <a href="7.jpg" class="lightbox-trigger" target="_blank"><img src="7.jpg" alt="Artwork 7"></a>
+                <a href="8.jpg" class="lightbox-trigger" target="_blank"><img src="8.jpg" alt="Artwork 8"></a>
+                <a href="9.jpg" class="lightbox-trigger" target="_blank"><img src="9.jpg" alt="Artwork 9"></a>
+                <a href="10.jpg" class="lightbox-trigger" target="_blank"><img src="10.jpg" alt="Artwork 10"></a>
+                <a href="11.webp" class="lightbox-trigger" target="_blank"><img src="11.webp" alt="Artwork 11"></a>
+                <a href="12.jpg" class="lightbox-trigger" target="_blank"><img src="12.jpg" alt="Artwork 12"></a>
+                <a href="13.jpg" class="lightbox-trigger" target="_blank"><img src="13.jpg" alt="Artwork 13"></a>
+                <a href="14.jpg" class="lightbox-trigger" target="_blank"><img src="14.jpg" alt="Artwork 14"></a>
+                <a href="15.jpg" class="lightbox-trigger" target="_blank"><img src="15.jpg" alt="Artwork 15"></a>
+                <a href="16.webp" class="lightbox-trigger" target="_blank"><img src="16.webp" alt="Artwork 16"></a>
+                <a href="17.webp" class="lightbox-trigger" target="_blank"><img src="17.webp" alt="Artwork 17"></a>
+                <a href="18.webp" class="lightbox-trigger" target="_blank"><img src="18.webp" alt="Artwork 18"></a>
+                <a href="19.webp" class="lightbox-trigger" target="_blank"><img src="19.webp" alt="Artwork 19"></a>
+                <a href="20.jpg" class="lightbox-trigger" target="_blank"><img src="20.jpg" alt="Artwork 20"></a>
+                <a href="21.jpg" class="lightbox-trigger" target="_blank"><img src="21.jpg" alt="Artwork 21"></a>
+                <a href="22.jpg" class="lightbox-trigger" target="_blank"><img src="22.jpg" alt="Artwork 22"></a>
+                <a href="23.jpg" class="lightbox-trigger" target="_blank"><img src="23.jpg" alt="Artwork 23"></a>
+                <a href="24.jpg" class="lightbox-trigger" target="_blank"><img src="24.jpg" alt="Artwork 24"></a>
+                <a href="25.jpg" class="lightbox-trigger" target="_blank"><img src="25.jpg" alt="Artwork 25"></a>
+                <a href="26.jpg" class="lightbox-trigger" target="_blank"><img src="26.jpg" alt="Artwork 26"></a>
+                <a href="27.jpg" class="lightbox-trigger" target="_blank"><img src="27.jpg" alt="Artwork 27"></a>
+                <a href="28.jpg" class="lightbox-trigger" target="_blank"><img src="28.jpg" alt="Artwork 28"></a>
+                <a href="29.jpg" class="lightbox-trigger" target="_blank"><img src="29.jpg" alt="Artwork 29"></a>
+                <a href="30.jpg" class="lightbox-trigger" target="_blank"><img src="30.jpg" alt="Artwork 30"></a>
+           
+        </div>
+    </section>
+    
+    
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+
+<hr>
+  
+    <section id="about" class="about section">
+        <h2>About Me</h2>
+        <p> I'm a BVA  artist  From  Lucknow , specializing in Graphic Designing. My work explores themes of Branding . I offer custom commissions for unique, personalized art pieces.</p>
+    </section>
+<hr>
+
+    <section id="commissions" class="commissions section">
+        <h2>Request a Commission</h2>
+        <form action="https://formspree.io/f/mkgwldrl" method="post" class="commission-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="details">Project Details:</label>
+            <textarea id="details" name="details" rows="5" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+<hr>
+
+    <section id="contact" class="contact section">
+        <h1>Get in Touch</h1>
+        <div class="social-media"  >
+
+            <a href="https://twitter.com" target="_blank" class="social-icon"><img src="x.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon"><img src="fb.png" alt=""></a>
+            <a href="https://www.instagram.com/artistic_garima1" target="_blank" class="social-icon"><img src="i.png" alt=""></a>
+            <a href="https://www.youtube.com/@Itsgarimarts" target="_blank" class="social-icon"><img src="yt.png" alt=""></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><img src="l.png" alt=""></a>
+            <a href="https://www.threads.net/" target="_blank" class="social-icon"><img src="t.png" alt=""></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Garima Singh. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
